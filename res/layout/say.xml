@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jishuz.library"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.jishuz.library.until.Topbar
+        android:id="@+id/say_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:titleColor="#000000"
+        app:titleSize="12sp"
+        app:titleText="个性签名" >
+    </cn.jishuz.library.until.Topbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp" >
+
+        <EditText
+            android:id="@+id/say_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top|left"
+            android:hint="个性签名"
+            android:minHeight="145dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    
+        <Button 
+            android:id="@+id/say_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:text="点击修改"/>
+
+</LinearLayout>

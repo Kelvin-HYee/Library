@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 我的描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="white_r">#fff</color>
+    <color name="blue">#419DE4</color>
+    <color name="red">#FF3366</color>
+    <color name="gray">#666666</color>
+    <color name="say">#DCDCDC</color>
+    <color name="red_bookdetails">#FF69B4</color>
+    <color name="white">#000000</color>
+    
+    <color name="night_mask">#77000000</color>
+
+</resources>

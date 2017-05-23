@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jishuz.library"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.jishuz.library.until.Topbar
+        android:id="@+id/topbarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:leftBtn="@drawable/back"
+        app:titleColor="#000000"
+        app:titleSize="12sp"
+        app:titleText="书籍详情页" >
+    </cn.jishuz.library.until.Topbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bookdetails_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bookdetails_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true" />
+
+                <TextView
+                    android:id="@+id/bookdetails_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookdetails_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/bookdetails_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:text="为了更好地营造读书环境,我们决定一次只能借一本书，读完可以再借，并且在此过程中如果发现想看的书可以先加入书篮，看完以后再来接着借,谢谢。噢 对了 我们就是指我 为什么加个们呢？因为比较有团队的感觉..."
+        android:textColor="@color/red_bookdetails"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/book_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/details_borrow_btn"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="我要借书"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp" />
+        <TextView 
+            android:id="@+id/basket_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#436EEE"
+            android:text="加入书篮"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+</LinearLayout>

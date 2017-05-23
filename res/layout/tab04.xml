@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/a"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心"
+            android:textColor="@color/white_r" />
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout" android:id="@+id/me_one">
+
+            <cn.jishuz.library.until.RoundImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logo" >
+            </cn.jishuz.library.until.RoundImageView>
+
+            <TextView
+                android:id="@+id/me_username"
+                style="@style/usertext"
+                android:layout_marginLeft="22dp"
+                android:text="silver" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <!-- 上圆角 -->
+
+        <LinearLayout style="@style/top_layout" android:id="@+id/me_say">
+
+            <TextView
+                style="@style/usertext"
+                android:text="个性签名" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角 -->
+
+        <LinearLayout style="@style/bottom_layout" android:id="@+id/me_message">
+            <TextView
+                style="@style/usertext"
+                android:text="消息通知" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/single_layout" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="夜间模式" />
+
+            <Switch
+                android:id="@+id/open_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOff="  "
+                android:textOn="  "
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <!-- 上圆角 -->
+
+        <LinearLayout style="@style/top_layout" android:id="@+id/me_feedback">
+
+            <TextView
+                style="@style/usertext"
+                android:text="意见反馈" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        <!-- 分割线 -->
+
+        <View style="@style/bg_line" />
+        <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" android:id="@+id/me_about">
+
+            <TextView
+                style="@style/usertext"
+                android:text="关于软件" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角 -->
+
+        <LinearLayout style="@style/bottom_layout" android:id="@+id/exit_app" >
+
+            <TextView
+                style="@style/usertext"
+                android:text="退出应用" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

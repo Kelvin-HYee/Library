@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout" android:id="@+id/book_name">
+            <TextView
+                style="@style/usertext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="书名:" />
+            <EditText 
+                android:id="@+id/book_name_edit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout" android:id="@+id/book_author">
+            <TextView
+                style="@style/usertext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="作者:" />
+            <EditText 
+                android:id="@+id/book_author_edit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout" android:id="@+id/book_publish">
+            <TextView
+                style="@style/usertext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="出版社:" />
+            <EditText 
+                android:id="@+id/book_publish_edit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout" android:id="@+id/book_score">
+            <TextView
+                style="@style/usertext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="评分:" />
+            <EditText 
+                android:id="@+id/book_score_edit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/admin_book_submit"
+        android:background="@android:drawable/btn_default"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="提交"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/gray"
+        android:text="无法添加图片..."/>
+</LinearLayout>

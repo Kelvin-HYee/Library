@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/a"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已借"
+            android:textColor="@color/white_r"/>
+    </LinearLayout> 
+
+    <LinearLayout 
+        android:id="@+id/tab01_say"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:background="@color/say"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/tab01_say_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="钱当然很重要，这我不是不知道；我一天何尝不为钱而受熬苦！可是，我又觉得，人活这一辈子，还应该有些另外的什么才对……"/>
+        <TextView 
+            android:id="@+id/tab01_say_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_gravity="right"
+            android:textColor="@color/gray"
+            android:text="——路遥《平凡的世界》"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab01_noData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp" >
+
+        <ImageView
+            android:id="@+id/tab01_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tab01_bookName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tab01_author"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tab01_publish"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="6dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tab01_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="借书时间：" />
+            <TextView
+                android:id="@+id/tab01_borrow_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tab01_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还书剩余：" />
+            <TextView
+                android:id="@+id/tab01_sheng"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="" />
+            <Button 
+                android:id="@+id/tab01_btn"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:textSize="15sp"
+                android:text="我要还书"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
